@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/cicle" />
+    <TextView
+        android:id="@+id/card_circle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/cicle"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#fff"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/item_img"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorPrimary" />
+
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_img"
+        android:text="nombre alumno"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/item_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_toRightOf="@+id/item_img"
+        android:text="sensor"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/item_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_toRightOf="@+id/item_sensor"
+        android:layout_marginLeft="80dp"
+        android:text="fecha"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nombre"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N°"
+            android:textSize="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/nombre"/>
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fecha"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/nombre"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID : "
+            android:textSize="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fecha"
+            android:layout_toLeftOf="@id/id"
+            />
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textSize="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fecha"/>
+    </RelativeLayout>
+
+</FrameLayout>
